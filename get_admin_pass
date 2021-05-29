@@ -1,0 +1,6 @@
+#!/bin/bash
+
+read -p "Enter the container name: " containerName 
+
+docker cp ${containerName}:/var/lib/jenkins/secrets/initialAdminPassword  .
+cat initialAdminPassword
